@@ -49,7 +49,11 @@ export default function Register() {
               buttons: "OK",
             });
           } else {
-            console.log("khata");
+            swal({
+              title: "Virhe",
+              icon: "warning",
+              buttons: "Yritän",
+            });
           }
         })
         .then((result) => {
